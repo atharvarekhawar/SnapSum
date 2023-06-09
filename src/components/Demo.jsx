@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { copy, linkIcon, loader, tick } from '../assets'
-import axios, { all } from 'axios';
+import axios from 'axios';
 
 const Demo = () => {
   const options = {
@@ -11,7 +11,7 @@ const Demo = () => {
       length: '3'
     },
     headers: {
-      'X-RapidAPI-Key': '',
+      'X-RapidAPI-Key': '42a262c1bamsh5aa0993bbbe1eadp175e98jsn5f13ca75650d',
       'X-RapidAPI-Host': 'article-extractor-and-summarizer.p.rapidapi.com'
     }
   };
@@ -35,7 +35,6 @@ const Demo = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     options.params.url = article.url;
-    options.headers['X-RapidAPI-Key'] = import.meta.env.VITE_X_RapidAPI_Key;
     setIsLoading(true);
     try {
       const response = await axios.request(options);
