@@ -11,7 +11,7 @@ const Demo = () => {
       length: '3'
     },
     headers: {
-      'X-RapidAPI-Key': '42a262c1bamsh5aa0993bbbe1eadp175e98jsn5f13ca75650d',
+      'X-RapidAPI-Key': '',
       'X-RapidAPI-Host': 'article-extractor-and-summarizer.p.rapidapi.com'
     }
   };
